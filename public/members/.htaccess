@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "members"
+AuthUserFile "/wamp/www/projects/pay-prot/passwords/.htpasswd"
+require valid-user

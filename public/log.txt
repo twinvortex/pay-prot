@@ -1,0 +1,36 @@
+Saturday 5th of September 2015 11:04:57 AM - 0:No valid action was provided
+Array
+(
+)
+
+---
+Saturday 5th of September 2015 11:06:03 AM - 0:No valid action was provided
+Array
+(
+    [check] => Add
+    [username] => dan
+    [password] => 123123
+    [key] => GTBILL_KEY
+)
+
+---
+Saturday 5th of September 2015 11:06:18 AM - 0:No valid action was provided
+Array
+(
+    [check] => Add
+    [Username] => dan
+    [Password] => 123123
+    [key] => GTBILL_KEY
+)
+
+---
+Saturday 5th of September 2015 11:06:38 AM - 1:User added successfully
+Array
+(
+    [action] => Add
+    [Username] => dan
+    [Password] => 123123
+    [key] => GTBILL_KEY
+)
+
+---
