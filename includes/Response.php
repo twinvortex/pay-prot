@@ -36,6 +36,7 @@ class Response
         if ($this->isEncrypted) {
             $result = $this->encrypt($response);
             echo $result;
+            return;
         }
 
         echo $response;
