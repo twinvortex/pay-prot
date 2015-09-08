@@ -3,7 +3,8 @@
 return array(
 		'gtbill_key' => 'GTBILL_KEY',
 		'passwd_file' => __DIR__ . '/../passwords/.htpasswd',
-		'encription_key' => 'mysecretkey',
+		'encryption_key' => 'mysecretkey',
+		'use_encryption' => false,
 		'log' => true,
 		'log_file' => __DIR__ . '/../logs/log.txt',
 
