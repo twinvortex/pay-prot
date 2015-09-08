@@ -9,6 +9,7 @@ $config = (object) require __DIR__ . '/../includes/config.php';
 $htpasswd = new Htpasswd($config->passwd_file); // the location of the htpassword
 
 $res = new Response($config->use_encryption, $config->encryption_key); // add a new response
+echo $config->log_file;
 $logger = new Logger($config->log, $config->log_file); // log to file, it's true by default -> can be modified in config.php file
 
 $ip_error = true;

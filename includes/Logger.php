@@ -21,7 +21,7 @@ class Logger {
 	 */
 	public function log($data, $requestData) {
 		if($this->enabled)
-			@file_put_contents('log.txt', date('l jS \of F Y h:i:s A').' - '.$data.PHP_EOL.$requestData.PHP_EOL.'---'.PHP_EOL, FILE_APPEND | LOCK_EX);
+			@file_put_contents($this->file, date('l jS \of F Y h:i:s A').' - '.$data.PHP_EOL.$requestData.PHP_EOL.'---'.PHP_EOL, FILE_APPEND | LOCK_EX);
 
 		return $data;
 	}
