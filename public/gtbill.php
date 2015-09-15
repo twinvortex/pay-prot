@@ -16,8 +16,8 @@ $ip_error = true;
 $request = (object) $_REQUEST; // set request to be an object
 $requestData = print_r($_REQUEST, 1);
 
-/*foreach($config->allowed_gtbill_ips as $ip) {
-    if($_SERVER['REMOTE_ADDR'] == $ip) {
+foreach($config->allowed_gtbill_ips as $ip) {
+    if($_SERVER['REMOTE_HOST'] == $ip) {
         $ip_error = false;
         break;
     } else {
@@ -26,7 +26,7 @@ $requestData = print_r($_REQUEST, 1);
 }
 
 if($ip_error)
-    return $res->response($logger->log('0:Invalid IP address', $requestData));*/
+    return $res->response($logger->log('0:Invalid IP address', $requestData));
 
 switch($request->action) {
 	case 'Check':
